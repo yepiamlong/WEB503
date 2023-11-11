@@ -1,0 +1,19 @@
+<div class="px-7 md:px-32 mx-auto  py-5 z-20 bg-white">
+    <div class="md:grid md:grid-cols-6 gap-6">
+        {{#each products}}
+        <div class="flex flex-col px-2 border hover:border-black hover:shadow-lg hover:rounded-2xl hover:shadow-2xl  py-3 border-gray-100   ">
+            
+            <div >
+                <img class="scale-x-150 sm:max-w-[100px] mx-auto pb-2" src="{{this.image}}" alt="{{this.image}}">
+            </div>
+            <p class="text-sm">{{this.name}}</p>
+            <p class="text-xs pt-3 text-gray-900">Lowest Ask</p>
+            <p class="font-bold">{{this.price}}</p>
+            <div class="py-2">
+                <button class="bg-gray-200 text-sm px-1 py-1  hover:bg-black hover:text-white">Mua sản phẩm</button>
+            </div>
+            
+        </div>
+{{/each}}
+    </div>
+</div>
